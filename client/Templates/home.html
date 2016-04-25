@@ -1,0 +1,41 @@
+<Template name='home'>
+<!--   <div class="transition-width">
+    Hello world
+  </div> -->
+{{#if Template.subscriptionsReady}}
+  <div class="row align-center">
+  {{#each Bases}}
+  <div class="col-md-4">
+  <div class="bildirisHome">
+    <div class="row">
+      <div class="col-md-12">
+      {{#with image}}
+        <a href="/orders/{{basesID}}"><img src="{{this.url}}" onclick="{{pathFor 'view'}}" height="200" width="230" style="padding: 5px; margin-left:2px;  float: left;"></a>
+      {{/with}}
+      </div>
+      <!-- <img src="{{image.url}}" > -->
+      <div  class="col-md-10 order">
+        <a  href="/orders/{{databas}}">
+        <h2 style="color:#44E416">{{bahasy}} {{bahasytip}}</h2>
+        <h4> {{sozbashy}}</h4> 
+        </a>
+
+        {{yazgyVar}}
+        
+          
+        
+      </div>
+    </div>
+  </div>
+     <div style="border-radius: 3px; color: red; background-color: #90EA90; position: absolute; bottom: 13px;right: 23px;">
+            <a href="/orders/{{databas}}"><strong>{{bildgornus}}</strong></a>
+          </div>
+  </div>
+
+
+  {{/each}}
+    </div>
+{{else}}
+{{>loading}}
+{{/if}}
+</Template>

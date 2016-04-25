@@ -1,0 +1,24 @@
+<Template name='SignIn'>
+<form class="col-md-8 form-horizontal">
+
+<div class="form-group has-feedback" id="login">
+  <label class="control-label" for="inputlogin">Login</label>
+  <input type="text" class="form-control" id="inputlogin" placeholder="Login" aria-describedby="inputloginStatus">
+  <span class="glyphicon form-control-feedback" id="loginglyp" aria-hidden="true"></span>
+  <span id="inputloginStatus" class="sr-only">(success)</span>
+</div>
+
+<div class="form-group has-feedback" id="password">
+  <label class="control-label" for="inputpassword">Password</label>
+  <input type="password" class="form-control" id="inputpassword" aria-describedby="inputpasswordStatus">
+  <span class="glyphicon form-control-feedback" id="passwordglyp" aria-hidden="true"></span>
+  <span id="inputpasswordStatus" class="sr-only">(success)</span>
+</div>
+
+<div class="form-group">
+  <div class="col-sm-offset-2 col-sm-10">
+    <button type="submit" class="btn btn-default">Sign In</button>
+  </div>
+</div>
+</form>
+</Template>

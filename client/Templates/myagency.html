@@ -1,0 +1,19 @@
+<template name='myagency'>
+<div class="container">
+{{#each agency}}
+  <div class="row">
+    <div class="col-md-1">
+    {{#with image}}
+      <img src="{{url}}" height="80px" width="80px">
+    {{/with}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-1" >
+      {{name}}
+    </div>  
+  </div>
+  
+{{/each}}  
+</div>
+</template>

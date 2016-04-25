@@ -1,0 +1,13 @@
+.transition-width {
+  background: #808991;
+  color: #FFF;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  height: 400px;
+  font-size: 20px;
+  border: 4px ridge black;
+  cursor: pointer;
+/*  transition: 5s linear;*/
+}
+

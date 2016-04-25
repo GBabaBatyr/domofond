@@ -1,0 +1,110 @@
+.psevdoFile {
+    overflow:hidden;
+    background: url(img/inputFileBtn.gif) right top no-repeat;
+    position: relative;
+    display: inline-block;
+}
+
+.fileInput {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size:199px;
+    opacity:0;
+    filter:alpha(opacity:0);
+}
+
+.inputFileText {
+    border: 1px solid #dadada;
+    height: 26px;
+    line-height: 26px;
+    float: right;
+    width: 182px;
+    padding: 0 3px;
+    margin: 3px;
+}
+
+.bildiris
+{
+  font-family: RobotoBold, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 12px;
+  border:1px solid green;  
+  margin-bottom:10px;
+  height: 160px;
+  /*width: 550px;*/
+  background-color: #FDF9F9;
+   overflow: hidden; 
+   border-radius: 10px;
+   text-overflow: ellipsis;
+   
+}
+.bildiris:hover
+{
+  border:1px solid red;  
+  /*margin-bottom:10px;*/
+}
+
+.bildirisHome
+{
+
+  padding: 12px;
+  border:1px solid green;  
+  margin-bottom:10px;
+  height: 420px;
+ /* width: 300px;*/
+  background-color: #FDF9F9;
+   overflow: hidden; 
+   border-radius: 10px;
+   text-overflow: ellipsis;
+   
+}
+.bildirisHome:hover
+{
+  border:1px solid red;  
+  /*margin-bottom:10px;*/
+}
+
+
+ .order a {
+ 
+  text-decoration: none;
+     display: block; /* Ссылка как блочный элемент */
+     
+    }
+
+.comment{
+  resize: none;
+  border:1px solid blue;
+
+}
+.ugrat{
+  height: 60px;
+  width: 80px;
+  
+}
+.bellik{
+  
+  padding: 12px;
+  /*border:1px solid blue;  */
+  margin-bottom:10px;
+  height: 300px;
+  width: 550px;
+  /*background-color: red;*/
+ 
+   border-radius: 10px;
+ 
+}
+.bellikler{
+  
+  padding: 12px;
+  /*border:1px solid blue;  */
+  margin-bottom:10px;
+  height: 100px;
+  /*width: 550px;*/
+  /*background-color: red;*/
+   overflow: hidden; 
+   border-radius: 10px;
+   text-overflow: ellipsis;
+}

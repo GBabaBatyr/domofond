@@ -1,0 +1,91 @@
+<template name='view'>
+
+
+<!-- <div class="row">
+  <div class="col-md-offset-3 col-md-6">
+    <img src="1.jpg" alt="surat" class="img-rounded" height="300px" width="400px">
+  </div>
+</div> -->
+{{#if Template.subscriptionsReady}}
+
+
+{{>imageGallery imageid=id }}
+<div class="row">
+  <h3 style="color: #61C9DC;"><strong>{{bahasy}} {{bahasytip}}. {{user.welayat}}. {{user.etrap}} </strong></h3> 
+</div>
+
+<div class="row">
+  <hr style="background-color: blue;  color: blue;  height: 5px;">
+</div>
+
+<div class="row">
+  <i> <h5><blockquote>{{yazgy}}</blockquote></h5></i>
+</div>
+
+<div class="row bg-warning">
+<div class="form-group">
+  <label for="input0" class="col-md-4 control-label"><h5><strong>Ady:</strong></h5></label>
+  <div class="col-md-8">
+    <h5 id="input0">{{user.adynyz}}</h5>
+  </div>
+</div>
+</div>
+
+<div class="row">
+<div class="form-group">
+  <label for="input1" class="col-md-4 control-label"><h5><strong>Tel:</strong></h5></label>
+  <div class="col-md-8">
+    <h5 id="input1">{{user.tel}}</h5>
+  </div>
+</div>
+</div>
+
+<div class="row bg-warning">
+<div class="form-group">
+  <label for="input2" class="col-md-4 control-label"><h5><strong>Addres:</strong></h5></label>
+  <div class="col-md-8">
+    <h5 id="input2">{{user.welayat}}. {{user.etrap}}</h5>
+  </div>
+</div>
+</div>
+
+<div class="row">
+<div class="form-group">
+  <label for="input2" class="col-md-4 control-label"><h5><strong>Bildirişiň görnüşi:</strong></h5></label>
+  <div class="col-md-8">
+    <h5 id="input2">{{bildgornus}}</h5>
+  </div>
+</div>
+</div>
+
+<div class="row bg-warning">
+<div class="form-group">
+  <label for="input2" class="col-md-4 control-label"><h5><strong>Bölümi:</strong></h5></label>
+  <div class="col-md-8">
+    <h5 id="input2">{{bolum}}</h5>
+  </div>
+</div>
+</div>
+
+<div class="row">
+<div class="form-group">
+  <label for="input2" class="col-md-4 control-label"><h5><strong>Gutarýan wagty:</strong></h5></label>
+  <div class="col-md-8">
+    <h5 id="input2">{{dowamlylygy}}</h5>
+  </div>
+</div>
+</div>
+<br>
+<div class="row">
+  <div class="col-md-6"> 
+    {{#if Template.subscriptionsReady}}
+      {{>addcomment commentID=id}}
+    {{else}}
+    {{>loading}}
+    {{/if}}
+  </div>
+</div>
+{{else}}
+{{>loading}}
+{{/if}}
+</template>

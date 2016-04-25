@@ -1,0 +1,201 @@
+<template name="addorder">
+  <div class="row">
+    <form class="form-horizontal">
+    <h3 style="color: blue;">Täze bildiriş</h3><hr style="background-color: blue; color: blue;  height: 5px;">
+    <div class="form-group">
+      <label for="input0" class="col-md-4 control-label">Sözbaşy*</label>
+      <div class="col-md-8">
+        <input type="text" class="form-control" id="input0" placeholder="Sözbaşy" maxlength="100" required>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="input1" class="col-md-4 control-label">Bildirişiň görnüşi*</label>
+      <div class="col-md-6">
+        <select size='1' class="form-control" id="input1">
+          <option>Satmakçy</option>
+          <option>Satyn almakçy</option>
+          <option>Çalşýan</option>
+          <option>Arenda alýan</option>
+          <option>Arenda berýän</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="input2" class="col-md-4 control-label">Bölümi*</label>
+      <div class="col-md-6">
+        <select size='1' class="form-control" id="input2">
+          <option>Hususy ýaşaýyş jaýy</option>
+          <option>Söwda üçin hususy öý</option>
+          <option>Şäher daşynda hususy jaý</option>
+          <option>Elitka</option>
+          <option>Beýlekiler</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="input3" class="col-md-4 control-label">Bahasy</label>
+      <div class="col-md-3">
+        <input type="text" class="form-control" id="input3" placeholder="Bahasy" maxlength="9" required>
+      </div>
+      <div class="col-md-3">
+        <select size='1' class="form-control" id="input4">
+          <option>manat</option>
+          <option>dollar</option>
+          <option>euro</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="input5" class="col-md-4 control-label">Bildirişiň ýazgysy</label>
+      <div class="col-md-8">
+        <textarea class="form-control" rows="7" id="input5" maxlength="20000" style="resize: none;" required></textarea>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="input6" class="col-md-4 control-label">Dowamlylyk wagty*</label>
+      <div class="col-md-4">
+        <select size='1' class="form-control" id="input6">
+          <option>Bir hepde</option>
+          <option>Iki hepde</option>
+          <option>Bir aý</option>
+          <option>Iki aý</option>
+          <option>Üç aý</option>
+          <option>Alty aý</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- <div class="form-group">
+          <label for="input7">File input</label>
+          <input type="file" id="input7"> 
+     </div> -->
+    <h3 style="color: blue;">Suratlar</h3><hr style="background-color: blue; color: blue;  height: 5px;">
+    <div class="row">
+      <div class="col-md-offset-4">
+        <span class="psevdoFile">
+          <button class="btn btn-primary">Saýlamak</button>
+          <input id="psevdoFileValue" class="inputFileText" type="text"/>
+          <input class="fileInput" type="file" id="file" size="1" onchange="document.getElementById('psevdoFileValue').value = this.value" name="addImg"/>
+        </span>
+      </div>
+    </div>
+
+     <!-- {{#each image}}
+          IMG URL:{{this.url}}
+          <img src="{{this.url}}" width="200px" height="200px">
+        {{/each}} -->
+    {{#if one}}
+    <div class="row">
+      <div class="col-md-offset-4">
+        <span class="psevdoFile">
+          <button class="btn btn-primary">Saýlamak</button>
+          <input id="psevdoFileValue1" class="inputFileText" type="text"/>
+          <input class="fileInput" type="file" id="file1" size="1" onchange="document.getElementById('psevdoFileValue1').value = this.value" name="addImg"/>
+        </span>
+      </div>
+    </div>
+    {{/if}}
+
+    {{#if two}}
+    <div class="row">
+      <div class="col-md-offset-4">
+        <span class="psevdoFile">
+          <button class="btn btn-primary">Saýlamak</button>
+          <input id="psevdoFileValue2" class="inputFileText" type="text"/>
+          <input class="fileInput" type="file" id="file2" size="1" onchange="document.getElementById('psevdoFileValue2').value = this.value" name="addImg"/>
+        </span>
+      </div>
+    </div>
+    {{/if}}
+
+    {{#if thre}}
+    <div class="row">
+      <div class="col-md-offset-4">
+        <span class="psevdoFile">
+          <button class="btn btn-primary">Saýlamak</button>
+          <input id="psevdoFileValue3" class="inputFileText" type="text"/>
+          <input class="fileInput" type="file" id="file3" size="1" onchange="document.getElementById('psevdoFileValue3').value = this.value" name="addImg"/>
+        </span>
+      </div>
+    </div>
+    {{/if}}
+
+    {{#if four}}
+    <div class="row">
+      <div class="col-md-offset-4">
+        <span class="psevdoFile">
+          <button class="btn btn-primary">Saýlamak</button>
+          <input id="psevdoFileValue4" class="inputFileText" type="text"/>
+          <input class="fileInput" type="file" id="file4" size="1" onchange="document.getElementById('psevdoFileValue4').value = this.value" name="addImg"/>
+        </span>
+      </div>
+    </div>
+    {{/if}}
+
+    <br><br>
+
+    <div class="form-group">
+      <label for="input8" class="col-md-4 control-label"></label>
+      <div class="col-md-4">
+        <button type="button" class="{{disabled}} btn btn-default" id="input8" style="color:blue;">Goşmaça surat goýmak </button> 
+      </div>
+    </div>
+
+      <!-- sahsy maglumatlar -->
+
+    <h3 style="color: blue;">Şahsy maglumatlar</h3><hr style="background-color: blue; color: blue;  height: 5px;">
+
+    <div class="form-group">
+      <label for="input9" class="col-md-4 control-label">Welaýat*</label>
+      <div class="col-md-6">
+        <select size='1' class="form-control" id="input9">
+          {{#each welayat}}
+            <option>{{ady}}</option>
+          {{/each}}
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="input10" class="col-md-4 control-label">Etrap (şäher) *</label>
+      <div class="col-md-6">
+        <select size='1' class="form-control" id="input10">
+          {{#each adress}}
+            <option>{{shaher}}</option>
+          {{/each}}
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="input11" class="col-md-4 control-label">Email addres</label>
+      <div class="col-md-8">
+        <input type="email" class="form-control" id="input11" placeholder="Email">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="input12" class="col-md-4 control-label">Adyňyz</label>
+      <div class="col-md-8">
+        <input type="text" class="form-control" id="input12" placeholder="Adyňyz" maxlength="30" required>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="input13" class="col-md-4 control-label">Telefon:</label>
+      <div class="col-md-8">
+        <input type="tel" pattern="+993[0-9]" class="form-control" id="input13" placeholder="+993xxxxxxxx" maxlength="12" required>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="col-md-offset-4 col-md-4 btn btn-success">Bildirişi goşmak</button>
+    </div>
+    </form>
+  </div>
+</template>

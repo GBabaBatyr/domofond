@@ -1,0 +1,49 @@
+<template name="imageGallery">
+  <div class="container">
+	  <div class="sp-slideshow">
+		  <input id="button-1" type="radio" name="radio-set" class="sp-selector-1" checked="checked" />
+		  <label for="button-1" class="button-label-1"></label>
+	    {{#if one}}	
+		    <input id="button-2" type="radio" name="radio-set" class="sp-selector-2" />
+		    <label for="button-2" class="button-label-2"></label>
+		  {{/if}}
+      {{#if two}} 
+		    <input id="button-3" type="radio" name="radio-set" class="sp-selector-3" />
+		    <label for="button-3" class="button-label-3"></label>
+		  {{/if}}
+      {{#if thre}} 
+		    <input id="button-4" type="radio" name="radio-set" class="sp-selector-4" />
+		    <label for="button-4" class="button-label-4"></label>
+		  {{/if}}
+      {{#if four}} 
+		    <input id="button-5" type="radio" name="radio-set" class="sp-selector-5" />
+		    <label for="button-5" class="button-label-5"></label>
+		  {{/if}}
+    	<label for="button-1" class="sp-arrow sp-a1"></label>
+      {{#if one}} 
+		    <label for="button-2" class="sp-arrow sp-a2"></label>
+      {{/if}}
+      {{#if two}} 
+		    <label for="button-3" class="sp-arrow sp-a3"></label>
+      {{/if}}
+      {{#if thre}} 
+		    <label for="button-4" class="sp-arrow sp-a4"></label>
+      {{/if}} 
+      {{#if four}} 
+		    <label for="button-5" class="sp-arrow sp-a5"></label>
+		  {{/if}}
+		  <div class="sp-content">
+			  <div class="sp-parallax-bg"></div>
+			  <ul class="sp-slider clearfix">
+        {{#each image}}
+				  <li><img src="{{this.url}}" alt="image" height="500" width="650"></li>
+        {{/each}}
+				<!-- <li>hello<img src="eagle.jpg" alt="image02w" >df</li>
+				<li>by<img src="image2.png" alt="image03w" >df</li>
+				<li>gel<img src="image4.png" alt="image04w" >df</li>
+				<li>biii<img src="image5.png" alt="image05w" >df</li> -->
+			  </ul>
+		  </div><!-- sp-content -->
+	  </div><!-- sp-slideshow -->
+  </div>
+</template>
